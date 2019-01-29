@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- End CSS -->
+		<!-- meta elements -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="some description">
+        <meta name="keywords" content="keyword 1, keyword 2, keyword 3, keyword 4, ...">
+		
+		<title>Kontakti</title>
+	</head>
+<body>
+	<header>
+		<div class="banner" style="height: 200px;"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html.html">Naslovnica</a></li>
+			  <li><a href="vijesti.html">Vijesti</a></li>
+			  <li><a href="kontakti.html">Kontakt</a></li>
+			  <li><a href="o nama.html">O nama</a></li>
+			  <li><a href="galerija.html">Galerija</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Pitanja</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/@45.8976723,16.8416386,15.75z" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">First Name *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+				<label for="lname">Last Name *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+				
+				<label for="lname">Your E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+				  <option value="">Please select</option>
+				  <option value="BE">Belgium</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="LU">Luxembourg</option>
+				  <option value="HU">Hungary</option>
+				</select>
+
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2019 Matej Jurić <a href="https://github.com/mjuric4"><img src="img/github.png" title="Github" alt="Github"></a></p> 
+	</footer>
+</body>
+</html>
